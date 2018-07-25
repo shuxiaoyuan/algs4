@@ -12,7 +12,9 @@ public class SortTest {
 		//Sort sort = new InsertionSort();
 		//Sort sort = new InsertionSortX();
 		//Sort sort = new ShellSort();
-		Sort sort = new MergeSortTD();
+		//Sort sort = new MergeSortTD();
+		//Sort sort = new QuickSort2way();
+		Sort sort = new QuickSort3way();
 		
 		sort.sort(a);
 		sort.show(a);

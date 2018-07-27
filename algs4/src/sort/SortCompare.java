@@ -17,6 +17,7 @@ public class SortCompare {
 		if(alg.equals("MergeBU"))    new MergeSortBU().sort(a);
 		if(alg.equals("Quick2way"))  new QuickSort2way().sort(a);
 		if(alg.equals("Quick3way"))  new QuickSort3way().sort(a);
+		if(alg.equals("Heap"))       new HeapSort().sort(a);
 		
 		return timer.elapsedTime();
 	}

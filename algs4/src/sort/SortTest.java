@@ -14,7 +14,8 @@ public class SortTest {
 		//Sort sort = new ShellSort();
 		//Sort sort = new MergeSortTD();
 		//Sort sort = new QuickSort2way();
-		Sort sort = new QuickSort3way();
+		//Sort sort = new QuickSort3way();
+		Sort sort = new HeapSort();
 		
 		sort.sort(a);
 		sort.show(a);

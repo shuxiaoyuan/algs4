@@ -9,6 +9,7 @@ public class SortCompare {
 	public static double time(String alg, Comparable[] a) {
 		Stopwatch timer = new Stopwatch();
 		if(alg.equals("Bubble"))     new BubbleSort().sort(a);
+        if(alg.equals("BubbleX"))    new BubbleSortX().sort(a);
 		if(alg.equals("Selection"))  new SelectionSort().sort(a);
 		if(alg.equals("Insertion"))  new InsertionSort().sort(a);
 		if(alg.equals("InsertionX")) new InsertionSortX().sort(a);

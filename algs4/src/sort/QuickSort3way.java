@@ -12,6 +12,7 @@ public class QuickSort3way extends QuickSort {
 			int cmp = a[i].compareTo(v);
 			if(cmp < 0) exch(a, lt++, i++);
 			else if(cmp > 0) exch(a, i, gt--);
+			else i++;
 		}
 		sort(a, lo, lt - 1);
 		sort(a, gt + 1, hi);

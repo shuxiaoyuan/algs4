@@ -11,12 +11,12 @@ public class QuickSort2way extends QuickSort {
 		sort(a, j + 1, hi);
 	}
 
-	// ½«Êı×é·ÖÎª a[lo..i - 1], a[i], a[i + 1..hi] 
+	// å°†æ•°ç»„åˆ†ä¸º a[lo..i - 1], a[i], a[i + 1..hi] 
 	public static int partition(Comparable[] a, int lo, int hi) {
 		int i = lo, j = hi + 1;
 		Comparable v = a[lo];
 		while(true) {
-			// É¨Ãè×óÓÒ£¬¼ì²éÊÇ·ñ½áÊø²¢½»»»ÔªËØ
+			// æ‰«æå·¦å³ï¼Œæ£€æŸ¥æ˜¯å¦ç»“æŸå¹¶äº¤æ¢å…ƒç´ 
 			while(less(a[++i], v)) if(i == hi) break;
 			while(less(v, a[--j])) if(j == lo) break;
 			if(i >= j) break;

@@ -6,12 +6,12 @@ public class HeapSort extends Sort {
 	public void sort(Comparable[] a) {
 		// TODO Auto-generated method stub
 	    
-	    // 最后一个有子结点的结点下标
+	    // 鏈�鍚庝竴涓湁瀛愮粨鐐圭殑缁撶偣涓嬫爣
 	    int lastK = (a.length - 2) / 2;
-	    // 建堆
+	    // 寤哄爢
 	    for(int i = lastK; i >= 0; i--)
 	        sink(a, i, a.length - 1);
-	    // 排序
+	    // 鎺掑簭
 	    for(int i = a.length - 1; i > 0; i--) {
 	        exch(a, 0, i);
 	        sink(a, 0, i-1);

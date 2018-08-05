@@ -2,17 +2,17 @@ package sort;
 
 public abstract class MergeSort extends Sort {
 
-	protected static Comparable[] aux; // ¹é²¢ËùĞèµÄ¸¨ÖúÊı×é
+	protected static Comparable[] aux; // å½’å¹¶æ‰€éœ€çš„è¾…åŠ©æ•°ç»„
 
-	// ½« a[lo..mid] ºÍ a[mid+1..hi] ¹é²¢
+	// å°† a[lo..mid] å’Œ a[mid+1..hi] å½’å¹¶
 	public static void merge(Comparable[] a, int lo, int mid, int hi) {
-		// ±£´æÁ½¸öÊı×éµÄ×îµÍÎ»ÖÃÏÂ±ê
+		// ä¿å­˜ä¸¤ä¸ªæ•°ç»„çš„æœ€ä½ä½ç½®ä¸‹æ ‡
 		int i = lo, j = mid + 1;
 		
-		// ¸ø¸¨ÖúÊı×é¸³Öµ
+		// ç»™è¾…åŠ©æ•°ç»„èµ‹å€¼
 		for(int k = lo; k <= hi; k++) aux[k] = a[k];
 
-		// ¹é²¢»Ø a[lo..hi]
+		// å½’å¹¶å› a[lo..hi]
 		for(int k = lo; k <= hi; k++) {
 			if(i > mid)       		      a[k] = aux[j++];
 			else if(j > hi) 		  	  a[k] = aux[i++];

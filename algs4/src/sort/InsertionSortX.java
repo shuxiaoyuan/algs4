@@ -2,8 +2,8 @@ package sort;
 
 public class InsertionSortX extends Sort {
 	
-	// algs4 ÍøÕ¾ÉÏµÄ°æ±¾¼ÓÁËÒ»¸öÓĞĞò¼ì²âÒÔ¼°°Ñ×îĞ¡Öµ·ÅÔÚµÚÒ»¸öÎ»ÖÃ
-	//²»¹ıÓÃ SortCompare ²âÊÔµÃµ½µÄ½á¹ûÊÇ²»Èç×Ô¼ºĞ´µÄÕâ¸ö°æ±¾¿ì
+	// algs4 ç½‘ç«™ä¸Šçš„ç‰ˆæœ¬åŠ äº†ä¸€ä¸ªæœ‰åºæ£€æµ‹ä»¥åŠæŠŠæœ€å°å€¼æ”¾åœ¨ç¬¬ä¸€ä¸ªä½ç½®
+	//ä¸è¿‡ç”¨ SortCompare æµ‹è¯•å¾—åˆ°çš„ç»“æœæ˜¯ä¸å¦‚è‡ªå·±å†™çš„è¿™ä¸ªç‰ˆæœ¬å¿«
 	@Override
 	public void sort(Comparable[] a) {
 		// TODO Auto-generated method stub

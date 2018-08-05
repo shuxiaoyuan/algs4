@@ -2,28 +2,28 @@ package sort;
 
 public abstract class Sort {
     /**
-     * 模板函数
+     * 妯℃澘鍑芥暟
      */
 	public abstract void sort(Comparable[] a);
 	
 	
     /**
-     * 辅助函数
+     * 杈呭姪鍑芥暟
      */
 	
-    // 比较(小于)
+    // 姣旇緝(灏忎簬)
     public static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
     }
     
-    // 交换
+    // 浜ゆ崲
     public static void exch(Comparable[] a, int i, int j) {
         Comparable t = a[i];
         a[i] = a[j];
         a[j] = t;
     }
     
-    // 打印
+    // 鎵撳嵃
     public static void show(Comparable[] a) {
         for(int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");
@@ -31,7 +31,7 @@ public abstract class Sort {
         System.out.println();
     }
     
-    // 判断是否有序
+    // 鍒ゆ柇鏄惁鏈夊簭
     public static boolean isSorted(Comparable[] a) {
         for(int i = 1; i < a.length; i++) {
             if(less(a[i], a[i - 1]))

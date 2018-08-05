@@ -9,7 +9,7 @@ public class MergeSortTD extends MergeSort {
 		sort(a, 0, a.length - 1);
 	}
 	
-	// 自顶向下的分治法思想
+	// 鑷《鍚戜笅鐨勫垎娌绘硶鎬濇兂
 	public void sort(Comparable[] a, int lo, int hi) {
 		// TODO Auto-generated method stub
 		if(hi <= lo) return;

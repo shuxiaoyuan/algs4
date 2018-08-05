@@ -23,13 +23,13 @@ public class SortCompare {
 		return timer.elapsedTime();
 	}
 	
-	// Ê¹ÓÃËã·¨ alg ½« T ¸ö³¤¶ÈÎª N µÄÊı×éÅÅĞò
+	// ä½¿ç”¨ç®—æ³• alg å°† T ä¸ªé•¿åº¦ä¸º N çš„æ•°ç»„æ’åº
 	public static double timeRandomInput(String alg, int N, int T) {
 		double total = 0.0;
 		Double[] a = new Double[N];
 		
 		for(int t = 0; t < T; t++) {
-			// ½øĞĞÒ»´Î²âÊÔ£¨Éú³ÉÒ»¸öÊı×é²¢ÅÅĞò£©
+			// è¿›è¡Œä¸€æ¬¡æµ‹è¯•ï¼ˆç”Ÿæˆä¸€ä¸ªæ•°ç»„å¹¶æ’åºï¼‰
 			for(int i = 0; i < N; i++) {
 				a[i] = StdRandom.uniform();
 			}

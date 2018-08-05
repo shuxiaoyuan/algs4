@@ -9,7 +9,7 @@ public abstract class QuickSort extends Sort {
 	@Override
 	public void sort(Comparable[] a) {
 		// TODO Auto-generated method stub
-		StdRandom.shuffle(a); // 消除对输入的依赖
+		StdRandom.shuffle(a); // 娑堥櫎瀵硅緭鍏ョ殑渚濊禆
 		sort(a, 0, a.length - 1);
 	}
 

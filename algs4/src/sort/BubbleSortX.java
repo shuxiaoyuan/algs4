@@ -4,7 +4,7 @@ public class BubbleSortX extends Sort {
 
     @Override
     public void sort(Comparable[] a) {
-        // ÓÅ»¯µÄÃ°ÅİÅÅĞò£¬×îÓÅ O(n)£¬×î²î O(n^2)
+        // ä¼˜åŒ–çš„å†’æ³¡æ’åºï¼Œæœ€ä¼˜ O(n)ï¼Œæœ€å·® O(n^2)
         boolean exched = false;
         for(int i = 1; i <= a.length - 1; i++) {
             for(int j = 0; j < a.length - 1; j++) {

@@ -10,8 +10,9 @@ public class SearchTest {
         Integer[] vals = { 0,   1,   2,   3,   4,   5,   6,   7,   8,   9,  10,  11,  12};
         
         // 定义查找方式
-        ST<String, Integer> ST = new SequentialSearchST<>();
+        //ST<String, Integer> ST = new SequentialSearchST<>();
         //ST<String, Integer> ST = new BinarySearchST<>(20);
+        ST<String, Integer> ST = new BST<>();
         
         // 将键值对放入
         ST.puts(keys, vals);

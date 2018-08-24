@@ -12,7 +12,8 @@ public class SearchTest {
         // 定义查找方式
         //ST<String, Integer> ST = new SequentialSearchST<>();
         //ST<String, Integer> ST = new BinarySearchST<>(20);
-        ST<String, Integer> ST = new BST<>();
+        //ST<String, Integer> ST = new BST<>();
+        ST<String, Integer> ST = new RedBlackBST<>();
         
         // 将键值对放入
         ST.puts(keys, vals);

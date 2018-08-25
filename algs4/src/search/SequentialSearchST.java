@@ -3,6 +3,7 @@ package search;
 // 顺序查找（基于无序链表）
 public class SequentialSearchST<Key, Value> extends ST<Key, Value> {
     
+    private int n = 0;  // 链表的长度
     private Node first; // 链表首结点
 
     private class Node { // 链表结点的定义
@@ -41,6 +42,7 @@ public class SequentialSearchST<Key, Value> extends ST<Key, Value> {
             }
         }
         first = new Node(key, val, first); // 未命中，新建结点
+        n++;
     }
 
     @Override
@@ -56,6 +58,10 @@ public class SequentialSearchST<Key, Value> extends ST<Key, Value> {
             System.out.print("(" + x.key + "," + x.val + ")");
         }
         System.out.println();
+    }
+    
+    public int size() {
+        return n;
     }
     
 }

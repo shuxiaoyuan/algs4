@@ -14,7 +14,8 @@ public class SearchTest {
         //ST<String, Integer> ST = new BinarySearchST<>(20);
         //ST<String, Integer> ST = new BST<>();
         //ST<String, Integer> ST = new RedBlackBST<>();
-        ST<String, Integer> ST = new SeparateChainingHashST<>();
+        //ST<String, Integer> ST = new SeparateChainingHashST<>();
+        ST<String, Integer> ST = new LinearProbingHashST<>();
         
         // 将键值对放入
         ST.puts(keys, vals);

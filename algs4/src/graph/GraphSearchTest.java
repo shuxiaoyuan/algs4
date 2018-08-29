@@ -17,8 +17,19 @@ public class GraphSearchTest {
         // dfs
         DepthFirstSearch dfs = new DepthFirstSearch(G, 0);
         System.out.print("dfs path 0 to 5: ");
-        Iterable<Integer> path = dfs.pathTo(5);
-        for(int v : path) {
+        Iterable<Integer> dfspath = dfs.pathTo(5);
+        for(int v : dfspath) {
+            if(v != 0) {
+                System.out.print("->");
+            }
+            System.out.print(v);
+        }
+        
+        // bfs
+        BreadthFirstSearch bfs = new BreadthFirstSearch(G, 0);
+        System.out.print("\nbfs path 0 to 5: ");
+        Iterable<Integer> bfspath = bfs.pathTo(5);
+        for(int v : bfspath) {
             if(v != 0) {
                 System.out.print("->");
             }

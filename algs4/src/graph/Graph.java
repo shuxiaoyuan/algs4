@@ -1,16 +1,18 @@
 package graph;
 
+import java.util.ArrayDeque;
+
 public class Graph {
     private final int V;        // 顶点数目
     private int E;              // 边的数目
-    private Bag<Integer>[] adj; // 邻接表 
+    private ArrayDeque<Integer>[] adj; // 邻接表 
     
     public Graph(int V) {
         this.V = V;
         this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V];  // 创建邻接表
+        adj = (ArrayDeque<Integer>[]) new ArrayDeque[V];  // 创建邻接表
         for(int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
+            adj[v] = new ArrayDeque<Integer>();
         }
     }
     

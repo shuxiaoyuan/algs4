@@ -1,5 +1,7 @@
 package graph;
 
+import java.util.ArrayDeque;
+
 public class DepthFirstSearch {
     private boolean[] marked;   // 这个顶点上调用过 dfs() 了吗？
     private int[] edgeTo;       // 从起点到一个顶点的已知路径上的最后一个顶点
@@ -30,11 +32,11 @@ public class DepthFirstSearch {
         if(!hasPathTo(v)) {
             return null;
         }
-        Bag<Integer> path = new Bag<Integer>();
+        ArrayDeque<Integer> path = new ArrayDeque<Integer>();
         for(int x = v; x != s; x = edgeTo[x]) {
-            path.add(x);
+            path.push(x);
         }
-        path.add(s);
+        path.push(s);
         return path;
     }
 }

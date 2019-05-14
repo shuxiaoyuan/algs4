@@ -5,7 +5,7 @@ import java.util.Iterator;
 /**
  * Author: Sean Lee
  * Date&Time: 2019年5月13日 下午4:46:54
- * Description: 算法 1.4 背包
+ * Description: P98 算法 1.4 背包
 */
 public class Bag<Item> implements Iterable<Item> {
 

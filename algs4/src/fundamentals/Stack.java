@@ -5,7 +5,7 @@ import java.util.Iterator;
 /**
  * Author: Sean Lee
  * Date&Time: 2019年5月13日 下午3:17:35
- * Description: 算法 1.2 下压堆栈（链表实现）
+ * Description: P94 算法 1.2 下压堆栈（链表实现）
 */
 public class Stack<Item> implements Iterable<Item> {
 

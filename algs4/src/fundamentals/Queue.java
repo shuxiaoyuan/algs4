@@ -5,7 +5,7 @@ import java.util.Iterator;
 /**
  * Author: Sean Lee
  * Date&Time: 2019年5月13日 下午4:06:49
- * Description: 算法 1.3 先进先出队列
+ * Description: P95 算法 1.3 先进先出队列
 */
 public class Queue<Item> implements Iterable<Item> {
 

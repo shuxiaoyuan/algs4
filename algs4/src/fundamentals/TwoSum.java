@@ -65,9 +65,9 @@ public class TwoSum {
 		System.out.println("bruteForce: " + timerBruteForce.elapsedTime() + "s");
 		
 		// 对排序+二分法计时
-		Stopwatch timerBinarySearch = new Stopwatch();
+		Stopwatch timerSortSearch = new Stopwatch();
 		sortSearch(a);
-		System.out.println("binarySearch: " + timerBinarySearch.elapsedTime() + "s");
+		System.out.println("binarySearch: " + timerSortSearch.elapsedTime() + "s");
 		
 	}
 

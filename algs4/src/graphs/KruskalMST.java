@@ -3,7 +3,7 @@ package graphs;
 import java.util.ArrayDeque;
 import java.util.PriorityQueue;
 
-import fundamentals.WeightedQuickUnion;
+import fundamentals.WeightedQuickUnionUF;
 
 public class KruskalMST {
     private ArrayDeque<Edge> mst;
@@ -14,7 +14,7 @@ public class KruskalMST {
         for(Edge e : G.edges()) {
             pq.offer(e);
         }
-        WeightedQuickUnion wqu = new WeightedQuickUnion(G.V());
+        WeightedQuickUnionUF wqu = new WeightedQuickUnionUF(G.V());
         while(!pq.isEmpty() && mst.size() < G.V() - 1) {
             Edge e = pq.poll();         // 从 pq 得到权重最小的边和它的顶点
             int v = e.either();     

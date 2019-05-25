@@ -1,33 +1,35 @@
 package fundamentals;
 
-public class QuickUnion {
-    private int[] id;
-    private int count;
-    
+/**
+ * Author: Sean Lee
+ * Date&Time: 2019年5月19日 下午2:22:35
+ * Description: P141 quick-union 算法
+*/
+public class QuickUnion extends UF {
+
     public QuickUnion(int N) {
-        id = new int[N];
-        count = N;
-        for(int i = 0; i < N; i++) {
-            id[i] = i;
-        }
+        super(N);
     }
-    
+
+    @Override
     public int find(int p) {
-        // 根结点 root == id[root]
+        // 找出分量的名称
         while(p != id[p]) {
             p = id[p];
         }
         return p;
     }
-    
+
+    @Override
     public void union(int p, int q) {
+        // 将 p 和 q 的根节点统一
         int pRoot = find(p);
         int qRoot = find(q);
         if(pRoot == qRoot) {
             return;
         }
-        id[pRoot] = qRoot;  // 根 pID 指向 qID
-        count--;
+        id[pRoot] = qRoot;
+        --count;
     }
-    
+
 }

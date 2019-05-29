@@ -1,15 +1,32 @@
 package sorting;
 
+/**
+ * Author: Sean Lee
+ * Date&Time: 2019年5月29日 上午9:22:22
+ * Description: P157 算法2.2 插入排序
+*/
 public class InsertionSort extends Sort {
 
-	@Override
-	public void sort(Comparable[] a) {
-		// TODO Auto-generated method stub
-		for(int i = 1; i < a.length; i++) {
-			for(int j = i; j > 0 && less(a[j], a[j - 1]); j--) {
-				exch(a, j - 1, j);
-			}
-		}
-	}
+    @Override
+    public void sort(Comparable[] a) {
+        int N = a.length;
+        for(int i = 1; i < N; ++i) {
+            Comparable tmp = a[i];
+            int j;
+            for(j = i - 1; j >= 0 && less(tmp, a[j]); --j) {
+                a[j+1] = a[j];
+            }
+            a[j+1] = tmp;
+        }
+    }
 
+    public void sortWithExch(Comparable[] a) {
+        int N = a.length;
+        for(int i = 1; i < N; ++i) {
+            for(int j = i; j > 0 && less(a[j], a[j-1]); --j) {
+                exch(a, j, j-1);
+            }
+        }
+    }
+    
 }

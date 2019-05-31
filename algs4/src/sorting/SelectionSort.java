@@ -9,7 +9,7 @@ package sorting;
 public class SelectionSort extends Sort {
 
     @Override
-    public void sort(Comparable[] a) {
+    protected void sort(Comparable[] a) {
         // 将 a[] 按升序排列
         int N = a.length;
         for(int i = 0; i < N; ++i) {

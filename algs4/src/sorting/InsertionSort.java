@@ -8,7 +8,7 @@ package sorting;
 public class InsertionSort extends Sort {
 
     @Override
-    public void sort(Comparable[] a) {
+    protected void sort(Comparable[] a) {
         int N = a.length;
         for(int i = 1; i < N; ++i) {
             Comparable tmp = a[i];

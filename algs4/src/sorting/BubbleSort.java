@@ -8,7 +8,7 @@ package sorting;
 public class BubbleSort extends Sort {
 
     @Override
-    public void sort(Comparable[] a) {
+    protected void sort(Comparable[] a) {
         int N = a.length;
         boolean isSorted;   // 若冒泡过程中已经排好序，则没必要继续冒泡
         for(int i = 1; i < N; ++i) {

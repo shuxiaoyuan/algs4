@@ -15,7 +15,7 @@ public class SelectionSort extends Sort {
         for(int i = 0; i < N; ++i) {
             int min = i;
             for(int j = i + 1; j < N; ++j) {
-                if(less(a[j], min)) {
+                if(less(a[j], a[min])) {
                     min = j;    // 只是记下下标，没有立即交换，防止多次交换的消耗
                 }
             }

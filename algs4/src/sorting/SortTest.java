@@ -10,7 +10,7 @@ import edu.princeton.cs.algs4.StdRandom;
 public class SortTest {
 
     public static void main(String[] args) {
-        int N = 20_000;
+        int N = 30_000;
         Integer a[] = new Integer[N];
         for(int i = 0; i < N; ++i) {
             a[i] = (int)(StdRandom.uniform() * N);
@@ -20,11 +20,15 @@ public class SortTest {
         Sort selectionSort = new SelectionSort();
         Sort insertionSort = new InsertionSort();
         Sort shellSort = new ShellSort();
+        Sort mergeSort = new MergeSort();
+        Sort mergeSortX = new MergeSortX();
         
         bubbleSort.sortWithCopyShow(a);
         selectionSort.sortWithCopyShow(a);
         insertionSort.sortWithCopyShow(a);
         shellSort.sortWithCopyShow(a);
+        mergeSort.sortWithCopyShow(a);
+        mergeSortX.sortWithCopyShow(a);
     }
 
 }

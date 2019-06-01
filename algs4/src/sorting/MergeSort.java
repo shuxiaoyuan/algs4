@@ -7,7 +7,8 @@ public class MergeSort extends Sort {
     @Override
     protected void sort(Comparable[] a) {
         aux = new Comparable[a.length]; // 一次性分配空间
-        sortTD(a, 0, a.length);
+//        sortTD(a, 0, a.length-1);
+        sortBU(a);
     }
     
     private void sortTD(Comparable[] a, int lo, int hi) {

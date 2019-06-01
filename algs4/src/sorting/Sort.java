@@ -24,7 +24,7 @@ public abstract class Sort {
     }
     
     public void sortWithCopyShow(Comparable[] a) {
-        Comparable[] b = Arrays.copyOf(a, a.length);    // 拷贝到新的数组，不影响原来数组顺序
+        Comparable[] b = a.clone();    // 拷贝到新的数组，不影响原来数组顺序
         Stopwatch stopwatchA = new Stopwatch();
         sort(b);
         double time = stopwatchA.elapsedTime();

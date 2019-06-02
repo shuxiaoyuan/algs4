@@ -1,5 +1,10 @@
 package sorting;
 
+/**
+ * Author: Sean Lee
+ * Date&Time: 2019年6月2日 下午2:22:34
+ * Description: P171 算法 2.4 自顶向下的归并排序 & P175 自底向上的归并排序
+*/
 public class MergeSort extends Sort {
 
     private Comparable[] aux;   // 归并所需的辅助数组

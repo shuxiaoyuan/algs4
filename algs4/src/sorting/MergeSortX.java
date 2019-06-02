@@ -1,5 +1,10 @@
 package sorting;
 
+/**
+ * Author: Sean Lee
+ * Date&Time: 2019年6月2日 下午2:24:11
+ * Description: P174 对归并排序的三个改进
+*/
 public class MergeSortX extends Sort {
 
     private static final int CUTOFF = 7;

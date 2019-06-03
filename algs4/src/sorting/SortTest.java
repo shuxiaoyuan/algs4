@@ -23,6 +23,7 @@ public class SortTest {
         Sort mergeSort = new MergeSort();
         Sort mergeSortX = new MergeSortX();
         Sort quickSort = new QuickSort();
+        Sort quick3waySort = new Quick3waySort();
         
         bubbleSort.sortWithCopyShow(a);
         selectionSort.sortWithCopyShow(a);
@@ -31,6 +32,7 @@ public class SortTest {
         mergeSort.sortWithCopyShow(a);
         mergeSortX.sortWithCopyShow(a);
         quickSort.sortWithCopyShow(a);
+        quick3waySort.sortWithCopyShow(a);
     }
 
 }

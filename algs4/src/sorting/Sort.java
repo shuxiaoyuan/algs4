@@ -1,7 +1,5 @@
 package sorting;
 
-import java.util.Arrays;
-
 import edu.princeton.cs.algs4.Stopwatch;
 
 /**

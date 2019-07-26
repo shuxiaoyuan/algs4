@@ -54,7 +54,6 @@ public class Queue<Item> implements Iterable<Item> {
 		if(isEmpty()) {
 			last = null;
 		}
-//		--N;				// 书中写在这里，私以为这样虽无 bug ，然会使 last 指向的对象保留，影响垃圾回收
 		return item;
 	}
 	
